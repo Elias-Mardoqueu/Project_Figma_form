@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+body{
+    position: relative;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+header{
+    position: relative;
+    width: 100%;
+    background-color: #121214;
+    display: flex;
+    justify-content: center;
+    padding: 5% 5%;
+}
+header > #text{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+#text > p{
+    color: #42D3FF;
+}
+
+#form{
+    width: 40%;
+    border-radius: 10px 10px;
+    margin-top: 15%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form > h2{
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 1%;
+    padding: 2%;
+}
+#form > .form{
+    width: 80%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: center;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    color: rgb(77, 77, 77);
+}
+.form > label{
+    margin-top: 2%;
+}
+.form > input, textarea, select{
+    width: 100%;
+    font-size: 18px;
+    padding: 1% 1%;
+    margin-top: 1%;
+    border-radius: 10px 10px;
+    border:1px solid #858585;
+}
+#check{
+    margin: 2% 0%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#check > input[type="checkbox"]{
+    width: 30px;
+}
+
+#form > #date{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#form > #date > .date_info{
+    display: flex;
+    margin: 3% 0%;
+    flex-direction: column;
+}
+#data{
+    width: 50%;
+}
+.time_event{
+    width: 25%;
+}
+#form > #date > .date_info > input[type=date],
+#form > #date > .date_info > input[type=time] {
+    width: 100%;
+    font-size: 18px;
+    padding: 2% 0%;
+    margin-top: 1%;
+    border-radius: 10px 10px;
+    border: 1px solid #858585;
+}
+
+#form > #button{
+    width: 100%;
+    padding: 4% 0%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+#button > button{
+    width: 80%;
+    padding: 2%;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px 10px;
+    background-color: #04D361;
+    color: white;
+}

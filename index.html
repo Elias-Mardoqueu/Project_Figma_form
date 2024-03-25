@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Figma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="text">
+            <h1>Crie e compartilhe 
+                seu evento.</h1>
+            <p>O primeiro passo, é preencher esse
+                formulário de inscrição.</p>
+        </div>
+    </header>
+    
+    <div id="form">
+
+        <h2>Informações do Evento</h2>
+        <form id="inputs" class="form">
+            <label>Titulo do Evento</label>
+            <input type="text">
+            
+            <label>Link do evento</label>
+            <input type="text">
+
+            <label>Whatsapp para contato</label>
+            <input type="tel">
+
+            <label>informações</label>
+            <textarea>
+            </textarea>
+
+            <label>categoria</label>
+            <select>
+                <option value="valor2" selected>tipo do evento</option>
+            </select>
+        </form>
+
+
+        <h2>Privacidade</h2>
+        <form id="privacy" class="form">
+            <label>Email do administrador</label>
+            <input type="text"/>
+            <label>Senha de acesso para os participantes</label>
+            <input type="text"/>
+            <div id="check">
+                <input type="checkbox"/>
+                <label>Evento privado</label>
+            </div>
+        </form>
+        
+        <h2>dia e hora</h2>
+        <form id="date" class="form">
+            <div class="date_info" id="data">
+                <label>Data</label>
+                <input type="date">
+            </div>
+            <div class="date_info time_event" >
+                <label>Das</label>
+                <input type="time" value="13:30"/>
+            </div>
+            <div class="date_info time_event" >
+                <label>Até</label>
+                <input type="time" value="17:30"/>
+            </div>
+        </form>
+
+        <div id="button">
+            <button>Salvar Evento</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
